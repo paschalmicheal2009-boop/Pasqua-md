@@ -139,7 +139,7 @@ async function handleJoinEvent(sock, id, participants) {
             await sock.sendMessage(id, {
                 text: fallbackMessage,
                 mentions: [participantString],
-                ...channelInfo
+                ...groupInfo
             });
         }
     }
